@@ -1,0 +1,25 @@
+GET http://localhost:3000/agenda/?date=2021-04-04
+###
+
+GET http://localhost:3000/todos/?status=TO%20DO
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 13,
+ "todo": "KKKR Done",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2004-04-24"
+}
+
+###
+
+PUT http://localhost:3000/todos/4/
+Content-Type: application/json
+
+{ "dueDate": "2004-04-24" }
